@@ -3,6 +3,7 @@
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=imkunal01" alt="imkunal01" /></a> </p>
 - 📫 How to reach me **kunaldhangar184@gmail.com**
 <h3 align="left">Connect with me:</h3>
+<h3> LinkedIN :- https://www.linkedin.com/in/kunal-dhangar-a35633289/</h3>
 <p align="left">
 </p>
 <h3 align="left">Languages and Tools:</h3>
