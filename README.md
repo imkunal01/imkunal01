@@ -6,16 +6,6 @@
   <img src="https://readme-typing-svg.herokuapp.com?size=22&duration=4000&color=F7F7F7&center=true&vCenter=true&lines=Building+ideas+into+reality;Full-Stack+Web+Development;UI%2FUX+Design;AI+%26+Automation" alt="Typing SVG" />
 </p>
 
----
-
-## 💫 About Me:
-- 🌐 Passionate about creating **Solutions for problems** 
-- 🌱 Learning: **Advanced tech & Optimization**  
-- 🤖 Exploring: **Exploring AI-powered apps with automation flows &  APIs**  
-- ⚡ Fun fact: *I mix design flair with developer precision*  
-
----
-
 ## 🌐 Connect with Me:
 <p align="left">
 <a href="https://instagram.com/im.kunal01" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?logo=Instagram&logoColor=white" alt="Instagram"/></a>
