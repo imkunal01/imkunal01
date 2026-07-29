@@ -1,0 +1,78 @@
+# Generates the 4 self-hosted cards referenced in README.md's "GitHub Analytics"
+# section: stats.svg, top-langs.svg, streak.svg, trophy.svg.
+#
+# WHY THIS EXISTS: the free public instance at github-readme-stats.vercel.app
+# was manually paused by its maintainer in Jan 2026 (returns 503
+# DEPLOYMENT_PAUSED) and isn't coming back — that's why those cards were
+# showing as broken images. This workflow generates the cards itself and
+# commits them straight into the repo, so the README no longer depends on
+# any live third-party endpoint at view-time.
+#
+# SETUP (one-time):
+#   1. Copy this file to .github/workflows/profile-cards.yml in your
+#      imkunal01/imkunal01 profile repo.
+#   2. Repo Settings → Actions → General → Workflow permissions →
+#      set to "Read and write permissions" → Save.
+#      (Skip this if you already did it for snake.yml — same setting.)
+#   3. Commit and push, then go to the Actions tab and manually run
+#      "Update Profile Cards" once (workflow_dispatch) so profile/*.svg
+#      gets created immediately instead of waiting for the 3am cron.
+#   4. After it succeeds, the 4 cards in the README will render.
+
+name: Update Profile Cards
+
+on:
+  schedule:
+    - cron: "0 3 * * *"   # once a day at 3am UTC
+  workflow_dispatch:        # lets you trigger it manually from the Actions tab
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Generate stats card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: stats
+          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&border_radius=10
+          path: profile/stats.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate top languages card
+        uses: readme-tools/github-readme-stats-action@v1
+        with:
+          card: top-langs
+          options: username=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&layout=compact&border_radius=10
+          path: profile/top-langs.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate streak stats card
+        uses: muhammad-fiaz/github-readme-streak-stats@v1.0.1
+        with:
+          USERNAME: ${{ github.repository_owner }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          THEME: tokyonight
+          OUTPUT_PATH: profile/streak.svg
+
+      - name: Generate trophy card
+        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
+        with:
+          username: ${{ github.repository_owner }}
+          output_path: profile/trophy.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Commit and push cards
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add profile/*.svg
+          git commit -m "Update profile cards [skip ci]" || exit 0
+          git push
