@@ -1,16 +1,9 @@
-# Generates 3 self-hosted cards referenced in README.md's "GitHub Analytics"
-# section: stats.svg, top-langs.svg, streak.svg. (Trophy card is NOT
-# self-hosted — it stayed on the live github-profile-trophy.vercel.app
-# badge; the self-hosting action for it turned out to need more than
-# GITHUB_TOKEN provides and lives on an unstable fork branch, not worth
-# the fragility for one card.)
-#
-# WHY THIS EXISTS: the free public instance at github-readme-stats.vercel.app
-# was manually paused by its maintainer in Jan 2026 (returns 503
-# DEPLOYMENT_PAUSED) and isn't coming back — that's why those cards were
-# showing as broken images. This workflow generates the cards itself and
-# commits them straight into the repo, so the README no longer depends on
-# any live third-party endpoint at view-time.
+# Generates 3 self-hosted cards referenced in README.md's "$ git log --stats"
+# section: stats.svg, top-langs.svg, streak.svg — colored to match the
+# banner.svg palette (near-black bg, gold accent) instead of a stock theme.
+# (Trophy card stays on the live github-profile-trophy.vercel.app badge —
+# the self-hosting action for it needs more than GITHUB_TOKEN provides and
+# lives on an unstable fork branch, not worth the fragility for one card.)
 #
 # SETUP (one-time):
 #   1. Copy this file to .github/workflows/profile-cards.yml in your
@@ -21,7 +14,7 @@
 #   3. Commit and push, then go to the Actions tab and manually run
 #      "Update Profile Cards" once (workflow_dispatch) so profile/*.svg
 #      gets created immediately instead of waiting for the 3am cron.
-#   4. After it succeeds, the 4 cards in the README will render.
+#   4. After it succeeds, the 3 cards in the README will render.
 
 name: Update Profile Cards
 
@@ -46,7 +39,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: stats
-          options: username=${{ github.repository_owner }}&show_icons=true&theme=tokyonight&hide_border=true&include_all_commits=true&count_private=true&border_radius=10
+          options: username=${{ github.repository_owner }}&show_icons=true&hide_border=true&include_all_commits=true&count_private=true&border_radius=10&bg_color=0d0d12&title_color=f5b942&icon_color=f5b942&text_color=e8e8ec&ring_color=f5b942
           path: profile/stats.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -54,7 +47,7 @@ jobs:
         uses: readme-tools/github-readme-stats-action@v1
         with:
           card: top-langs
-          options: username=${{ github.repository_owner }}&theme=tokyonight&hide_border=true&layout=compact&border_radius=10
+          options: username=${{ github.repository_owner }}&hide_border=true&layout=compact&border_radius=10&bg_color=0d0d12&title_color=f5b942&text_color=e8e8ec
           path: profile/top-langs.svg
           token: ${{ secrets.GITHUB_TOKEN }}
 
@@ -63,7 +56,16 @@ jobs:
         with:
           USERNAME: ${{ github.repository_owner }}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          THEME: tokyonight
+          BACKGROUND: "0d0d12"
+          RING: "f5b942"
+          FIRE: "f5b942"
+          STROKE: "3a3a46"
+          CURR_STREAK_NUM: "f2f2f0"
+          SIDE_NUMS: "f2f2f0"
+          CURR_STREAK_LABEL: "f5b942"
+          DATES: "8a8a96"
+          HIDE_BORDER: "true"
+          BORDER_RADIUS: "10"
           OUTPUT_PATH: profile/streak.svg
 
       - name: Commit and push cards
