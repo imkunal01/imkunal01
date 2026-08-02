@@ -1,5 +1,9 @@
-# Generates the 4 self-hosted cards referenced in README.md's "GitHub Analytics"
-# section: stats.svg, top-langs.svg, streak.svg, trophy.svg.
+# Generates 3 self-hosted cards referenced in README.md's "GitHub Analytics"
+# section: stats.svg, top-langs.svg, streak.svg. (Trophy card is NOT
+# self-hosted — it stayed on the live github-profile-trophy.vercel.app
+# badge; the self-hosting action for it turned out to need more than
+# GITHUB_TOKEN provides and lives on an unstable fork branch, not worth
+# the fragility for one card.)
 #
 # WHY THIS EXISTS: the free public instance at github-readme-stats.vercel.app
 # was manually paused by its maintainer in Jan 2026 (returns 503
@@ -61,13 +65,6 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           THEME: tokyonight
           OUTPUT_PATH: profile/streak.svg
-
-      - name: Generate trophy card
-        uses: Erik-Donath/github-profile-trophy@feature/generate-svg
-        with:
-          username: ${{ github.repository_owner }}
-          output_path: profile/trophy.svg
-          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push cards
         run: |
