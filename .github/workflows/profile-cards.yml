@@ -1,6 +1,10 @@
 # Generates 3 self-hosted cards referenced in README.md's "$ git log --stats"
 # section: stats.svg, top-langs.svg, streak.svg — colored to match the
 # banner.svg palette (near-black bg, gold accent) instead of a stock theme.
+# streak.svg uses the OFFICIAL DenverCoder1/github-readme-streak-stats
+# action (6.9k stars); an earlier version of this file used an unofficial
+# fork whose colors didn't apply correctly (numbers/labels went invisible
+# on a dark background) — this is the real maintainer's action instead.
 # (Trophy card stays on the live github-profile-trophy.vercel.app badge —
 # the self-hosting action for it needs more than GITHUB_TOKEN provides and
 # lives on an unstable fork branch, not worth the fragility for one card.)
@@ -52,21 +56,11 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Generate streak stats card
-        uses: muhammad-fiaz/github-readme-streak-stats@v1.0.1
+        uses: DenverCoder1/github-readme-streak-stats@main
         with:
-          USERNAME: ${{ github.repository_owner }}
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BACKGROUND: "0d0d12"
-          RING: "f5b942"
-          FIRE: "f5b942"
-          STROKE: "3a3a46"
-          CURR_STREAK_NUM: "f2f2f0"
-          SIDE_NUMS: "f2f2f0"
-          CURR_STREAK_LABEL: "f5b942"
-          DATES: "8a8a96"
-          HIDE_BORDER: "true"
-          BORDER_RADIUS: "10"
-          OUTPUT_PATH: profile/streak.svg
+          options: user=${{ github.repository_owner }}&background=0d0d12&ring=f5b942&fire=f5b942&currStreakNum=f2f2f0&sideNums=f2f2f0&currStreakLabel=f5b942&sideLabels=f5b942&dates=8a8a96&stroke=3a3a46&hide_border=true&border_radius=10
+          path: profile/streak.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Commit and push cards
         run: |
