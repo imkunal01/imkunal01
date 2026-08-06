@@ -1,140 +1,141 @@
 <div align="center">
 
-<img src="./banner.svg" width="100%" alt="Kunal Dhangar — Computer Science Student, Full-Stack Developer"/>
+<!-- ANIMATED WAVE BANNER -->
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:0f2027,50:203a43,100:2c5364&height=220&section=header&text=Hey,%20I'm%20Kunal%20👋&fontSize=42&fontColor=ffffff&animation=fadeIn&fontAlignY=38&desc=Full-Stack%20Developer%20|%20Backend%20&%20Systems%20Enthusiast&descAlignY=58&descSize=18" />
 
-<a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Fira+Code&size=16&pause=1000&color=F5B942&center=true&vCenter=true&width=600&lines=Building+ideas+into+reality;Full-Stack+Web+Development;UI%2FUX+Design;AI+%26+Automation" alt="Typing SVG" /></a>
+<!-- TYPING SVG -->
+<a href="https://git.io/typing-svg">
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=600&size=24&duration=3000&pause=800&color=58A6FF&center=true&vCenter=true&width=600&lines=Building+scalable+backend+systems;React+%2B+Node.js+%2B+PostgreSQL+%2F+MongoDB;Turning+ideas+into+shipped+products;Always+debugging%2C+always+learning" alt="Typing SVG" />
+</a>
 
 <br/>
 
-<img src="https://komarev.com/ghpvc/?username=imkunal01&color=f5b942&style=flat-square&label=PROFILE+VIEWS" alt="Profile views"/>
-<img src="https://img.shields.io/github/followers/imkunal01?label=FOLLOWERS&style=flat-square&color=f5b942" alt="Followers"/>
-
-<p>
-<a href="https://instagram.com/im.kunal01" target="_blank"><img src="https://img.shields.io/badge/Instagram-%23E4405F.svg?style=flat-square&logo=Instagram&logoColor=white" alt="Instagram"/></a>
-<a href="mailto:kunaldhangar184@gmail.com"><img src="https://img.shields.io/badge/Email-D14836?style=flat-square&logo=gmail&logoColor=white" alt="Email"/></a>
-</p>
+<!-- SOCIAL / VISIT BADGES (no LinkedIn, no personal contact) -->
+<img src="https://komarev.com/ghpvc/?username=imkunal01&style=for-the-badge&color=58A6FF&label=PROFILE+VIEWS" />
+<img src="https://img.shields.io/github/followers/imkunal01?style=for-the-badge&color=58A6FF&labelColor=0d1117" />
 
 </div>
 
 <br/>
 
-### <code>$ cat highlights.md</code>
+<!-- ABOUT SECTION -->
+## 🧭 About Me
 
-- 📜 Co-invented and filed a patent for **AstraOrb** — a satellite-based autonomous disaster relief system with on-orbit AI and inter-satellite consensus protocols
-- 💼 Software Engineering Intern @ **Orbosis Global** — cut API latency with Redis caching and automated payment verification
-- ⚡ Architected systems to comfortably handle **1,000+ concurrent users** in production
-- 🧩 **450+ DSA / competitive programming problems** solved across CodeChef, GeeksforGeeks & more
+<img align="right" width="280" src="https://raw.githubusercontent.com/ABSphreak/ABSphreak/master/gifs/Hi.gif" />
 
-<br/>
+- 🔭 Currently building full-stack products with **React, Node.js & PostgreSQL/MongoDB**
+- ⚙️ Deep diving into **DevOps** — Docker, CI/CD, AWS, Kubernetes
+- 🧩 Solved **450+ DSA problems** across LeetCode, CodeForces & GeeksforGeeks
+- 🛰️ Co-inventor of a patent on satellite-based autonomous disaster relief systems
+- 🌱 Exploring **Web3 / Solidity** and 3D interactive experiences with React Three Fiber
+- 💬 Ask me about backend architecture, caching strategies, or real-time systems
 
-### <code>$ ls projects/</code>
+<br clear="right"/>
 
-**🛍️ KripaConnect**
-Full-stack e-commerce platform with JWT + Google OAuth 2.0 RBAC, Redis-cached APIs, and Razorpay payments — built to comfortably serve 1,000+ concurrent users.
-<sub>`Node.js` `Express` `PostgreSQL` `Redis` `Razorpay` `OAuth 2.0`</sub>
+---
 
-**🎬 Creolink**
-Real-time collaborative video project-management platform with an Adobe Premiere Pro (UXP) plugin, a WebSocket engine, and Upstash Redis read-through caching with anti-stampede protection.
-<sub>`Next.js` `PostgreSQL` `WebSockets` `Redis` `Adobe UXP`</sub>
+## 🛠️ Tech Arsenal
 
-**🧭 [HireCompass](https://hirecompass.vercel.app)**
-AI-powered job application tracker with a Kanban pipeline and AI-generated outreach & cover letters, plus a React Native companion app.
-<sub>`React` `Node.js` `Gemini API` `Groq` `React Native`</sub>
+<div align="center">
 
-**🐞 BugForge**
-Real-time project management & bug-tracking tool, containerized and deployed with Docker/Nginx.
-<sub>`Next.js 15` `Express` `Socket.IO` `Docker` `Nginx`</sub>
+<img src="https://skillicons.dev/icons?i=js,ts,cpp,html,css,react,nextjs,nodejs,express,mongodb,postgres,redis,docker,aws,gcp,git,github,postman,figma&perline=10" />
+
+</div>
 
 <br/>
 
-### <code>$ cat stack.json</code>
+<div align="center">
 
-<details open>
-<summary><b>Languages</b></summary><br/>
-<p>
+![](https://img.shields.io/badge/-Languages-0d1117?style=for-the-badge)&nbsp;
+![](https://img.shields.io/badge/C++-00599C?style=flat-square&logo=cplusplus&logoColor=white)
+![](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black)
+![](https://img.shields.io/badge/TypeScript-3178C6?style=flat-square&logo=typescript&logoColor=white)
+![](https://img.shields.io/badge/SQL-4479A1?style=flat-square&logo=mysql&logoColor=white)
 
-<img src="https://img.shields.io/badge/c-%2300599C.svg?style=flat-square&logo=c&logoColor=white"/> <img src="https://img.shields.io/badge/c++-%2300599C.svg?style=flat-square&logo=c%2B%2B&logoColor=white"/> <img src="https://img.shields.io/badge/css3-%231572B6.svg?style=flat-square&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/html5-%23E34F26.svg?style=flat-square&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/java-%23ED8B00.svg?style=flat-square&logo=openjdk&logoColor=white"/> <img src="https://img.shields.io/badge/javascript-%23323330.svg?style=flat-square&logo=javascript&logoColor=%23F7DF1E"/> <img src="https://img.shields.io/badge/markdown-%23000000.svg?style=flat-square&logo=markdown&logoColor=white"/> <img src="https://img.shields.io/badge/php-%23777BB4.svg?style=flat-square&logo=php&logoColor=white"/> <img src="https://img.shields.io/badge/python-3670A0?style=flat-square&logo=python&logoColor=ffdd54"/>
+![](https://img.shields.io/badge/-Frameworks-0d1117?style=for-the-badge)&nbsp;
+![](https://img.shields.io/badge/React-61DAFB?style=flat-square&logo=react&logoColor=black)
+![](https://img.shields.io/badge/Next.js-000000?style=flat-square&logo=nextdotjs&logoColor=white)
+![](https://img.shields.io/badge/Node.js-339933?style=flat-square&logo=nodedotjs&logoColor=white)
+![](https://img.shields.io/badge/Express.js-000000?style=flat-square&logo=express&logoColor=white)
+![](https://img.shields.io/badge/Socket.io-010101?style=flat-square&logo=socketdotio&logoColor=white)
+![](https://img.shields.io/badge/Tailwind-06B6D4?style=flat-square&logo=tailwindcss&logoColor=white)
 
-</p>
-</details>
+![](https://img.shields.io/badge/-Infra%20%26%20Cloud-0d1117?style=for-the-badge)&nbsp;
+![](https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white)
+![](https://img.shields.io/badge/AWS-232F3E?style=flat-square&logo=amazonaws&logoColor=white)
+![](https://img.shields.io/badge/GCP-4285F4?style=flat-square&logo=googlecloud&logoColor=white)
+![](https://img.shields.io/badge/Jenkins-D24939?style=flat-square&logo=jenkins&logoColor=white)
+![](https://img.shields.io/badge/Redis-DC382D?style=flat-square&logo=redis&logoColor=white)
 
-<details open>
-<summary><b>Frontend & Mobile</b></summary><br/>
-<p>
+</div>
 
-<img src="https://img.shields.io/badge/chakra-%234ED1C5.svg?style=flat-square&logo=chakraui&logoColor=white"/> <img src="https://img.shields.io/badge/chart.js-F5788D.svg?style=flat-square&logo=chart.js&logoColor=white"/> <img src="https://img.shields.io/badge/jquery-%230769AD.svg?style=flat-square&logo=jquery&logoColor=white"/> <img src="https://img.shields.io/badge/Next-black?style=flat-square&logo=next.js&logoColor=white"/> <img src="https://img.shields.io/badge/redux-%23593d88.svg?style=flat-square&logo=redux&logoColor=white"/> <img src="https://img.shields.io/badge/React%20Hook%20Form-%23EC5990.svg?style=flat-square&logo=reacthookform&logoColor=white"/> <img src="https://img.shields.io/badge/React_Router-CA4245?style=flat-square&logo=react-router&logoColor=white"/> <img src="https://img.shields.io/badge/-React%20Query-FF4154?style=flat-square&logo=react%20query&logoColor=white"/> <img src="https://img.shields.io/badge/react_native-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/react-%2320232a.svg?style=flat-square&logo=react&logoColor=%2361DAFB"/>
+---
 
-</p>
-</details>
+## 📊 GitHub Stats
 
-<details open>
-<summary><b>Backend</b></summary><br/>
-<p>
+<div align="center">
 
-<img src="https://img.shields.io/badge/ejs-%23B4CA65.svg?style=flat-square&logo=ejs&logoColor=black"/> <img src="https://img.shields.io/badge/express.js-%23404d59.svg?style=flat-square&logo=express&logoColor=%2361DAFB"/> <img src="https://img.shields.io/badge/FastAPI-005571?style=flat-square&logo=fastapi"/> <img src="https://img.shields.io/badge/JWT-black?style=flat-square&logo=JSON%20web%20tokens"/> <img src="https://img.shields.io/badge/node.js-6DA55F?style=flat-square&logo=node.js&logoColor=white"/> <img src="https://img.shields.io/badge/NODEMON-%23323330.svg?style=flat-square&logo=nodemon&logoColor=%BBDEAD"/> <img src="https://img.shields.io/badge/Socket.io-black?style=flat-square&logo=socket.io&badgeColor=010101"/>
-
-</p>
-</details>
-
-<details open>
-<summary><b>Databases</b></summary><br/>
-<p>
-
-<img src="https://img.shields.io/badge/mysql-4479A1.svg?style=flat-square&logo=mysql&logoColor=white"/> <img src="https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=flat-square&logo=mongodb&logoColor=white"/>
-
-</p>
-</details>
-
-<details open>
-<summary><b>Cloud, Hosting & DevOps</b></summary><br/>
-<p>
-
-<img src="https://img.shields.io/badge/AWS-%23FF9900.svg?style=flat-square&logo=amazon-aws&logoColor=white"/> <img src="https://img.shields.io/badge/firebase-%23039BE5.svg?style=flat-square&logo=firebase"/> <img src="https://img.shields.io/badge/GoogleCloud-%234285F4.svg?style=flat-square&logo=google-cloud&logoColor=white"/> <img src="https://img.shields.io/badge/netlify-%23000000.svg?style=flat-square&logo=netlify&logoColor=#00C7B7"/> <img src="https://img.shields.io/badge/Render-%46E3B7.svg?style=flat-square&logo=render&logoColor=white"/> <img src="https://img.shields.io/badge/vercel-%23000000.svg?style=flat-square&logo=vercel&logoColor=white"/> <img src="https://img.shields.io/badge/firebase-a08021?style=flat-square&logo=firebase&logoColor=ffcd34"/>
-
-</p>
-</details>
-
-<details open>
-<summary><b>Tools & Design</b></summary><br/>
-<p>
-
-<img src="https://img.shields.io/badge/NPM-%23CB3837.svg?style=flat-square&logo=npm&logoColor=white"/> <img src="https://img.shields.io/badge/pnpm-%234a4a4a.svg?style=flat-square&logo=pnpm&logoColor=f69220"/> <img src="https://img.shields.io/badge/vite-%23646CFF.svg?style=flat-square&logo=vite&logoColor=white"/> <img src="https://img.shields.io/badge/figma-%23F24E1E.svg?style=flat-square&logo=figma&logoColor=white"/>
-
-</p>
-</details>
+<img height="165" src="https://github-readme-stats.vercel.app/api?username=imkunal01&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF&icon_color=58A6FF&ring_color=58A6FF" />
+<img height="165" src="https://github-readme-stats.vercel.app/api/top-langs/?username=imkunal01&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=58A6FF" />
 
 <br/>
 
-### <code>$ git log --stats</code>
+<img src="https://github-readme-streak-stats.herokuapp.com/?user=imkunal01&theme=tokyonight&hide_border=true&background=0d1117&ring=58A6FF&fire=58A6FF&currStreakLabel=58A6FF" />
 
-<!-- stats/top-langs/streak are self-hosted — generated by .github/workflows/profile-cards.yml
-     and committed into this repo. They'll show broken until that workflow runs once.
-     Trophy stays live (github-profile-trophy.vercel.app), styled to match the palette. -->
+</div>
 
-<p align="center">
-<img height="165em" src="./profile/stats.svg" alt="Kunal's GitHub stats"/>
-<img height="165em" src="./profile/top-langs.svg" alt="Top languages"/>
-</p>
+<div align="center">
+<img src="https://github-readme-activity-graph.vercel.app/graph?username=imkunal01&theme=tokyo-night&hide_border=true&bg_color=0d1117&color=58A6FF&line=58A6FF&point=ffffff" width="100%"/>
+</div>
 
-<p align="center">
-<img src="./profile/streak.svg" alt="GitHub streak"/>
-</p>
+---
 
-<p align="center">
-<img src="https://github-profile-trophy.vercel.app/?username=imkunal01&theme=onedark&no-frame=false&no-bg=true&margin-w=4" alt="Trophies"/>
-</p>
+## 🐍 Contribution Snake
+
+<div align="center">
+<img src="https://raw.githubusercontent.com/imkunal01/imkunal01/output/github-contribution-grid-snake-dark.svg" width="100%" />
+</div>
+
+> Generated automatically via a self-hosted GitHub Actions workflow (see setup notes below) — avoids the third-party widget breakage from earlier redesigns.
+
+---
+
+## 🧠 DSA / Competitive Programming
+
+<div align="center">
+
+<!-- LeetCode heatmap + stats -->
+<img src="https://leetcard.jacoblin.cool/imkunal01?theme=dark&font=baloo2&ext=heatmap" width="100%"/>
+
+<br/><br/>
+
+<!-- GeeksforGeeks stats -->
+<img src="https://geeks-for-geeks-stats-card.vercel.app/?username=kunaldhafzmv&theme=dark" width="48%"/>
+<img src="https://img.shields.io/badge/CodeChef-1299%2B-5B4638?style=for-the-badge&logo=codechef&logoColor=white" />
+
+</div>
+
+<div align="center">
+<sub>Pin any two repos you want featured — update the <code>repo=</code> params above.</sub>
+</div>
+
+---
+
+## 🌐 Find Me
+
+<div align="center">
+
+<a href="mailto:kunaldhangar184@gmail.com"><img src="https://img.shields.io/badge/Email-EA4335?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+<a href="https://github.com/imkunal01"><img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white"/></a>
+
+</div>
 
 <br/>
 
-### <code>$ ./contribution-snake.sh</code>
+<div align="center">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=0:2c5364,50:203a43,100:0f2027&height=120&section=footer" />
+</div>
 
-<!-- Self-hosted via .github/workflows/snake.yml, published to the `output` branch. -->
-
-<p align="center">
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/imkunal01/imkunal01/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/imkunal01/imkunal01/output/github-contribution-grid-snake.svg" />
-  <img alt="GitHub contribution snake animation" src="https://raw.githubusercontent.com/imkunal01/imkunal01/output/github-contribution-grid-snake.svg" />
-</picture>
-</p>
-
+<div align="center">
+<i>“Code is easy. Debugging your own assumptions is the real skill.”</i>
+</div>
